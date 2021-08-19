@@ -1,0 +1,209 @@
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2.h:51:18: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>::operator[]' requested here
+          return _m1[k1] == _m2[k2];
+                 ^
+/usr/local/include/lemon/vf2.h:160:11: note: in instantiation of member function 'lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable> >::operator()' requested here
+      if(!_nEq(n1,n2))
+          ^
+/usr/local/include/lemon/vf2.h:268:34: note: in instantiation of function template specialization 'lemon::Vf2<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable> > >::feas<lemon::SUBGRAPH>' requested here
+                if(_conn[n2]==0&&feas<MT>(nodeOfDepth,n2))
+                                 ^
+/usr/local/include/lemon/vf2.h:390:16: note: in instantiation of function template specialization 'lemon::Vf2<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable> > >::extMatch<lemon::SUBGRAPH>' requested here
+        return extMatch<SUBGRAPH>();
+               ^
+/usr/local/include/lemon/vf2.h:574:22: note: in instantiation of member function 'lemon::Vf2<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable> > >::find' requested here
+      bool ret = alg.find();
+                     ^
+stub.cpp:238:48: note: in instantiation of member function 'lemon::Vf2Wizard<lemon::Vf2Wizard<lemon::Vf2Wizard<lemon::Vf2WizardBase<lemon::concepts::Graph, lemon::concepts::Graph> >::SetNodeEqBase<lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable> > > >::SetMappingBase<lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node> > >::run' requested here
+  succ = vf2(g,h).nodeLabels(l1,l2).mapping(r).run();
+                                               ^
+stub.cpp:244:3: note: in instantiation of function template specialization 'checkVf2Compile<lemon::concepts::Graph, lemon::concepts::Graph>' requested here
+  checkVf2Compile<concepts::Graph,concepts::Graph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2.h:51:29: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable>::operator[]' requested here
+          return _m1[k1] == _m2[k2];
+                            ^
+/usr/local/include/lemon/vf2.h:160:11: note: in instantiation of member function 'lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable> >::operator()' requested here
+      if(!_nEq(n1,n2))
+          ^
+/usr/local/include/lemon/vf2.h:268:34: note: in instantiation of function template specialization 'lemon::Vf2<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable> > >::feas<lemon::SUBGRAPH>' requested here
+                if(_conn[n2]==0&&feas<MT>(nodeOfDepth,n2))
+                                 ^
+/usr/local/include/lemon/vf2.h:390:16: note: in instantiation of function template specialization 'lemon::Vf2<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable> > >::extMatch<lemon::SUBGRAPH>' requested here
+        return extMatch<SUBGRAPH>();
+               ^
+/usr/local/include/lemon/vf2.h:574:22: note: in instantiation of member function 'lemon::Vf2<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable> > >::find' requested here
+      bool ret = alg.find();
+                     ^
+stub.cpp:238:48: note: in instantiation of member function 'lemon::Vf2Wizard<lemon::Vf2Wizard<lemon::Vf2Wizard<lemon::Vf2WizardBase<lemon::concepts::Graph, lemon::SmartGraph> >::SetNodeEqBase<lemon::bits::vf2::MapEq<lemon::concepts::ReadMap<lemon::concepts::Graph::Node, EqComparable>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, EqComparable> > > >::SetMappingBase<lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node> > >::run' requested here
+  succ = vf2(g,h).nodeLabels(l1,l2).mapping(r).run();
+                                               ^
+stub.cpp:245:3: note: in instantiation of function template specialization 'checkVf2Compile<lemon::concepts::Graph, lemon::SmartGraph>' requested here
+  checkVf2Compile<concepts::Graph,SmartGraph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:473:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int>::operator[]' requested here
+        const int& currIntLabel = _intLabels1[n1];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:269:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int> >::Vf2pp' requested here
+    myVf2pp(g,h,r,c1,c2);
+    ^
+stub.cpp:299:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::concepts::Graph>' requested here
+  checkVf2ppCompile<concepts::Graph,concepts::Graph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: arithmetic on a null pointer treated as a cast from integer to pointer is a GNU extension [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:473:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char>::operator[]' requested here
+        const int& currIntLabel = _intLabels1[n1];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:280:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char> >::Vf2pp' requested here
+    myVf2pp_c(g,h,r,c1_c,c2_c);
+    ^
+stub.cpp:299:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::concepts::Graph>' requested here
+  checkVf2ppCompile<concepts::Graph,concepts::Graph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:473:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>::operator[]' requested here
+        const int& currIntLabel = _intLabels1[n1];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:291:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::Vf2pp' requested here
+    myVf2pp_IntConv(g,h,r,c1_IntConv,c2_IntConv);
+    ^
+stub.cpp:299:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::concepts::Graph>' requested here
+  checkVf2ppCompile<concepts::Graph,concepts::Graph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:478:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2>::operator[]' requested here
+        const int& currIntLabel = _intLabels2[n2];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:291:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::Vf2pp' requested here
+    myVf2pp_IntConv(g,h,r,c1_IntConv,c2_IntConv);
+    ^
+stub.cpp:299:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::concepts::Graph>' requested here
+  checkVf2ppCompile<concepts::Graph,concepts::Graph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:478:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, int>::operator[]' requested here
+        const int& currIntLabel = _intLabels2[n2];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, int> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:269:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, int>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, int> >::Vf2pp' requested here
+    myVf2pp(g,h,r,c1,c2);
+    ^
+stub.cpp:300:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::SmartGraph>' requested here
+  checkVf2ppCompile<concepts::Graph,SmartGraph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: arithmetic on a null pointer treated as a cast from integer to pointer is a GNU extension [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:478:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, char>::operator[]' requested here
+        const int& currIntLabel = _intLabels2[n2];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, char> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:280:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, char>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, char> >::Vf2pp' requested here
+    myVf2pp_c(g,h,r,c1_c,c2_c);
+    ^
+stub.cpp:300:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::SmartGraph>' requested here
+  checkVf2ppCompile<concepts::Graph,SmartGraph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:478:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible2>::operator[]' requested here
+        const int& currIntLabel = _intLabels2[n2];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible2> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:291:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::concepts::Graph, lemon::SmartGraph, lemon::concepts::ReadWriteMap<lemon::concepts::Graph::Node, lemon::SmartGraphBase::Node>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible2> >::Vf2pp' requested here
+    myVf2pp_IntConv(g,h,r,c1_IntConv,c2_IntConv);
+    ^
+stub.cpp:300:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::concepts::Graph, lemon::SmartGraph>' requested here
+  checkVf2ppCompile<concepts::Graph,SmartGraph>();
+  ^
+In file included from stub.cpp:18:
+In file included from /usr/local/include/lemon/vf2.h:26:
+In file included from /usr/local/include/lemon/concepts/graph.h:26:
+In file included from /usr/local/include/lemon/concepts/graph_components.h:27:
+/usr/local/include/lemon/concepts/maps.h:52:41: warning: performing pointer arithmetic on a null pointer has undefined behavior if the offset is nonzero [-Wnull-pointer-arithmetic]
+        return *(static_cast<Value *>(0)+1);
+                 ~~~~~~~~~~~~~~~~~~~~~~~^
+/usr/local/include/lemon/vf2pp.h:473:35: note: in instantiation of member function 'lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible1>::operator[]' requested here
+        const int& currIntLabel = _intLabels1[n1];
+                                  ^
+/usr/local/include/lemon/vf2pp.h:503:17: note: in instantiation of member function 'lemon::Vf2pp<lemon::SmartGraph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::SmartGraphBase::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::getMaxLabel' requested here
+      _maxLabel(getMaxLabel()), _labelTmp1(_maxLabel+1),_labelTmp2(_maxLabel+1),
+                ^
+stub.cpp:291:5: note: in instantiation of member function 'lemon::Vf2pp<lemon::SmartGraph, lemon::concepts::Graph, lemon::concepts::ReadWriteMap<lemon::SmartGraphBase::Node, lemon::concepts::Graph::Node>, lemon::concepts::ReadMap<lemon::SmartGraphBase::Node, IntConvertible1>, lemon::concepts::ReadMap<lemon::concepts::Graph::Node, IntConvertible2> >::Vf2pp' requested here
+    myVf2pp_IntConv(g,h,r,c1_IntConv,c2_IntConv);
+    ^
+stub.cpp:301:3: note: in instantiation of function template specialization 'checkVf2ppCompile<lemon::SmartGraph, lemon::concepts::Graph>' requested here
+  checkVf2ppCompile<SmartGraph,concepts::Graph>();
+  ^
+10 warnings generated.

@@ -1,0 +1,14 @@
+EXAMPLE 1:
+./staticsamplermain -i:../datasets/CollegeMsg-remapped.txt -m:../motifstemplates/square.txt -delta:86400 -type:1 -ex:2 -tl:30 -topo:2
+you will run ex(=2) times the odeN with simple algorithms for isomorphism (type:1) on a square target (topo:2) with a time limit of 30 seconds
+
+
+EXAMPLE 2:
+./staticsamplermain -i:../datasets/CollegeMsg-remapped.txt -m:../motifstemplates/square.txt -delta:86400 -type:1 -ex:2 -samp:100 -topo:2 -nt:6
+you will run ex(=2) times the odeN with simple algorithms for isomorphism and parallel execution (type:2) on a square target (topo:2) with a limit of sample s = 100 and 6 parallel threads
+
+
+EXAMPLE 3:
+./staticsamplermain -i:../datasets/CollegeMsg-remapped.txt -m:../motifstemplates/square.txt -delta:86400 -type:3 -ex:3 -samp:100
+you will run ex(=3) times the odeN with the VF2++ subroutine (type:3) on a square target with a limit of sample s = 100 
+NOTE: this is the unique version that supports a target different from: a triangle, and edge, a wedge or a square target (see the main paper)

@@ -1,4 +1,4 @@
-# Code for review of the paper: odeN Simultaneous Approximation of Multiple Motif Counts in Large Networks (CIKM 2021)
+# Code for the paper: odeN Simultaneous Approximation of Multiple Motif Counts in Large Networks (CIKM 2021)
 
 In this repository you will find the code used as proof of concepts for the paper odeN: Simultaneous Approximation of Multiple Motif Counts in Large Temporal Networks. 
 Additionally we report a file with the parameters used in our experimental evaluation in the folder parameters/parameters.pdf.

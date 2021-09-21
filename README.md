@@ -20,4 +20,8 @@ Building the code of odeN requires various steps, which are now described:
 
 Now you can run the executable ```./staticsamplermain``` to print a list of the parameters. We report also in ```example-usage.txt``` some example of how to run it properly.
 
+## Known Issues and notes
+There are some known compilation issues due to the SNAP library that is required in the project, depending on the OS version where you compile the whole package, in particular:
+* If you run the `make` command on a Ubuntu OS with a version lower than 18.04 (i.e., 14.04, 16.04) then you need to comment the struct `__exception` in lines 17-23 of the file `glib-core/bd.h`
+
 We will soon update the repository by rendering the dependecy on Lemon optional and by providing better documentation on odeN functionalities. Stay tuned!
